@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Sequence
 
 from fastapi import Depends, APIRouter
 from sqlalchemy import select
@@ -14,7 +14,14 @@ router = APIRouter(prefix='/custom_tasks', tags=['dev_temporary'])
 
 
 @router.get("/get_users", response_model=List[UserResponse])
-async def get_signup_users(db: AsyncSession = Depends(get_db)):
+async def get_signup_users(db: AsyncSession = Depends(get_db)) -> Sequence[User]:
+    """
+    Asynchronous function for retrieving a list of users.
+    Parameters:
+    - db: AsyncSession object for database interaction
+    Returns:
+    - Sequence of User objects representing the list of users
+    """
     request = select(User)
     response = await db.execute(request)
     result = response.scalars().all()

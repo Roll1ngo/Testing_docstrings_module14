@@ -7,7 +7,16 @@ router = APIRouter(prefix='/api_service', tags=['service'])
 
 
 @router.get("/health_checker")
-async def healthchecker(db: AsyncSession = Depends(get_db)):
+async def healthchecker(db: AsyncSession = Depends(get_db)) -> dict:
+    """
+    A route for checking the health of the application.
+
+    Parameters:
+        db (AsyncSession): The database session to use.
+
+    Returns:
+        dict: A dictionary containing the health check message and operational capability of the database
+    """
     try:
         result = await db.execute(text("SELECT 1"))
         result = result.fetchone()

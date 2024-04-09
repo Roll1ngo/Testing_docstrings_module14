@@ -33,6 +33,11 @@ app.add_middleware(
 
 @app.on_event("startup")
 async def startup():
+    """
+    A function that is called when the application starts up.
+    It initializes a connection to a Redis database using the
+     provided configuration and initializes the FastAPI limiter.
+    """
     r = await redis.Redis(
         host=config.REDIS_DOMAIN,
         port=config.REDIS_PORT,
@@ -43,9 +48,13 @@ async def startup():
 
 
 @app.get("/", response_class=HTMLResponse)
-def localhost_page(request: Request):
+def localhost_page(request: Request) -> HTMLResponse:
+    """
+    This function handles the GET request to the root URL.
+    It takes a Request object as a parameter and returns a TemplateResponse object.
+    """
     return templates.TemplateResponse('start_page.html', context={'request': request})
 
 
 if __name__ == '__main__':
-    uvicorn.run('main:app', host="localhost", port=8000, reload=True)
+    uvicorn.run('main:app', host="localhost", port=8001, reload=True)

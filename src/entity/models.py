@@ -13,6 +13,22 @@ class Base(DeclarativeBase):
 
 
 class Contact(Base):
+    """
+       This class represents a contact in the database.
+
+       Attributes:
+       id (int): The unique identifier for the contact.
+       name (str): The name of the contact.
+       last_name (str): The last name of the contact.
+       email (str): The email address of the contact.
+       phone_number (str): The phone number of the contact.
+       birthday (date): The birthday of the contact.
+       user_id (UUID): The unique identifier for the user associated with the contact.
+       user (User): The user associated with the contact.
+
+       Methods:
+       None
+       """
     __tablename__ = 'contacts'
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(String(50), index=True)
@@ -27,6 +43,24 @@ class Contact(Base):
 
 
 class User(Base):
+    """
+      This class represents a user in the database.
+
+      Attributes:
+      id (UUID): The unique identifier for the user.
+      username (str): The username of the user.
+      email (str): The email address of the user.
+      password (str): The hashed password of the user.
+      avatar (str): The avatar of the user.
+      refresh_token (str): The refresh token of the user.
+      email_verified (bool): Whether the user's email has been verified.
+      open_verification_letter (bool): Whether the user has opened the verification letter.
+      created_at (date): The date and time when the user was created.
+      updated_at (date): The date and time when the user was last updated.
+
+      Methods:
+      None
+      """
     __tablename__ = 'users'
     id: Mapped[UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     username: Mapped[str] = mapped_column(String(50))
