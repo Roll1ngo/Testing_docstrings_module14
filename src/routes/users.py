@@ -19,9 +19,10 @@ from src.services.cache_redis import update_user_cache
 from src.conf.config import config
 from src.repository import users as repositories_users
 
-router = APIRouter(prefix="/users", tags=["users"])
+router = APIRouter(prefix="/users", tags=["users"])  # Creates a new router for users-related routes
 
 
+# Configures the Cloudinary library
 cloudinary.config(
     cloud_name=config.CLD_NAME,
     api_key=config.CLD_API_KEY,

@@ -3,7 +3,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from src.database.connect import get_db
 from sqlalchemy import text
 
-router = APIRouter(prefix='/api_service', tags=['service'])
+router = APIRouter(prefix='/api_service', tags=['service'])  # Creates a new router for service-related routes
 
 
 @router.get("/health_checker")

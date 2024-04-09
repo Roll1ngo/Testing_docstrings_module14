@@ -16,12 +16,15 @@ app.mount("/static", StaticFiles(directory="src/static"), name="static")
 
 app.include_router(custom_tasks.router)
 app.include_router(auth.router, prefix="/rest_api")
-app.include_router(contacts.router, prefix="/rest_api")
+app.include_router(contacts.router, prefix="/rest_api")  # Includes routers form src.routes
 app.include_router(users.router, prefix="/rest_api")
 app.include_router(api_service.router)
 
 origins = ["*"]
 
+""" Adds a CORS middleware to the FastAPI application,
+ allowing cross-origin requests from specified origins,
+  with credentials, and for all methods and headers"""
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -57,4 +60,4 @@ def localhost_page(request: Request) -> HTMLResponse:
 
 
 if __name__ == '__main__':
-    uvicorn.run('main:app', host="localhost", port=8001, reload=True)
+    uvicorn.run('main:app', host="localhost", port=8001, reload=True)  # Starts the Uvicorn server

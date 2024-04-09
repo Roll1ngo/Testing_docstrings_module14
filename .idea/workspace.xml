@@ -4,27 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c0af4a4-8b93-4e3a-9a17-46cb99f118ea" name="Changes" comment="Del redundant files">
-      <change afterPath="$PROJECT_DIR$/docs/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/make.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/__init__.py" afterDir="false" />
+    <list default="true" id="2c0af4a4-8b93-4e3a-9a17-46cb99f118ea" name="Changes" comment="Add docstrings for functions, commit before add docstring for configuration rows">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/conf/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/conf/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/connect.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/contacts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/users.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/api_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contacts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/custom_tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/custom_tasks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/cache_redis.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/cache_redis.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +29,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Roll1ngo"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Roll1ngo/Testing_docstrings_module14.git",
@@ -97,12 +91,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712490769360</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add docstrings for functions, commit before add docstring for configuration rows">
+      <option name="closed" value="true" />
+      <created>1712642924297</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712642924297</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Del redundant files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Del redundant files" />
+    <MESSAGE value="Add docstrings for functions, commit before add docstring for configuration rows" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add docstrings for functions, commit before add docstring for configuration rows" />
   </component>
 </project>

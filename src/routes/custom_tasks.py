@@ -10,7 +10,8 @@ from src.entity.models import User
 from src.database.connect import get_db
 from src.schemas.user import UserResponse
 
-router = APIRouter(prefix='/custom_tasks', tags=['dev_temporary'])
+router = APIRouter(prefix='/custom_tasks', tags=['dev_temporary'])  # Creates a new router for custom_tasks-related
+# routes
 
 
 @router.get("/get_users", response_model=List[UserResponse])

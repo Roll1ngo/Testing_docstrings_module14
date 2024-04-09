@@ -10,7 +10,7 @@ from src.schemas.contact import ContactSchema, ContactResponse
 from src.entity.models import User, Contact
 from src.services.auth import auth_service
 
-router = APIRouter(prefix='/contacts', tags=['contacts'])
+router = APIRouter(prefix='/contacts', tags=['contacts'])  # Creates a new router for contacts-related routes
 
 
 @router.get('/', response_model=list[ContactResponse],
