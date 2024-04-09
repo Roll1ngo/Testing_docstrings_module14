@@ -1,3 +1,5 @@
+from typing import Any
+
 from fastapi import APIRouter, HTTPException, Depends, status, BackgroundTasks, Request, Response
 from fastapi.security import OAuth2PasswordRequestForm, HTTPAuthorizationCredentials, HTTPBearer
 from fastapi.responses import FileResponse, HTMLResponse
@@ -95,7 +97,7 @@ async def refresh_token(input_refresh: str = None,
 
 
 @router.get('/confirmed_email/{token}', response_class=HTMLResponse)
-async def confirmed_email(token: str, request: Request, db: AsyncSession = Depends(get_db)) -> HTMLResponse | dict:
+async def confirmed_email(token: str, request: Request, db: AsyncSession = Depends(get_db)) -> Any | dict:
     """
     Asynchronous function for confirming the user's email address.
     Parameters:

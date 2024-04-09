@@ -1,3 +1,6 @@
+from pathlib import Path
+from typing import Any
+
 import redis.asyncio as redis
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
@@ -12,14 +15,18 @@ from src.routes.auth import templates
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="src/static"), name="static")
+BASE_DIR = Path(__file__).parent
+# Mount the static
+app.mount("/static", StaticFiles(directory=BASE_DIR.joinpath("src/static")), name="static")
 
+# Includes routers from src.routes
 app.include_router(custom_tasks.router)
 app.include_router(auth.router, prefix="/rest_api")
-app.include_router(contacts.router, prefix="/rest_api")  # Includes routers form src.routes
+app.include_router(contacts.router, prefix="/rest_api")
 app.include_router(users.router, prefix="/rest_api")
 app.include_router(api_service.router)
 
+# connection CORS
 origins = ["*"]
 
 """ Adds a CORS middleware to the FastAPI application,
@@ -51,7 +58,7 @@ async def startup():
 
 
 @app.get("/", response_class=HTMLResponse)
-def localhost_page(request: Request) -> HTMLResponse:
+def localhost_page(request: Request) -> Any:
     """
     This function handles the GET request to the root URL.
     It takes a Request object as a parameter and returns a TemplateResponse object.

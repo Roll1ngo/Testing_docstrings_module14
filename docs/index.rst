@@ -3,12 +3,11 @@ sphinx-quickstart on Thu Mar 2 15:09:18 2023.
 You can adapt this file completely to your liking, but it should at least
 contain the root `toctree` directive.
 
-Welcome to Rest API's documentation!
-====================================
-
+Welcome to Rest API documentation!
+==================================
 .. toctree::
-  :maxdepth: 2
-  :caption: Contents:
+   :maxdepth: 2
+   :caption: Contents:
 
 
 REST API main
@@ -19,7 +18,7 @@ REST API main
   :show-inheritance:
 
 
-REST API config
+REST API Config
 ================
 .. automodule:: src.conf.config
   :members:
@@ -35,7 +34,7 @@ REST API database
   :show-inheritance:
 
 
-REST API entity
+REST API models
 ================
 .. automodule:: src.entity.models
   :members:
@@ -69,7 +68,7 @@ REST API routes Custom_tasks
 
 REST API routes Users
 ======================
-.. automodule:: src.routes.custom_tasks
+.. automodule:: src.routes.users
   :members:
   :undoc-members:
   :show-inheritance:
@@ -85,14 +84,14 @@ REST API routes Contacts
 
 REST API routes Auth
 =====================
-.. automodule:: src.routes.contacts
+.. automodule:: src.routes.auth
   :members:
   :undoc-members:
   :show-inheritance:
 
 
 REST API routes Api_service
-============================
+===========================
 .. automodule:: src.routes.api_service
   :members:
   :undoc-members:
