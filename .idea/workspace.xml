@@ -5,12 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c0af4a4-8b93-4e3a-9a17-46cb99f118ea" name="Changes" comment="Add all docstrings for functions and configuration rows">
+      <change afterPath="$PROJECT_DIR$/docs/_build/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/src/example/ops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/src/get_recipe/get_recipe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/src/get_recipe/get_recipe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/src/get_recipe/ingredients.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/src/method/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/src/my_class/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/src/my_class/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/src/reduce_sum/answer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/src/reduce_sum/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/src/save_data/answer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/src/save_data/data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/src/save_data/task.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/tests/conspect_tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/tests/test_answer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/tests/test_class.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/tests/test_method.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/tests/test_ops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/tests/test_recipe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/tests/test_save.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/conf/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/conf/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/email.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,17 +72,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/RollPy/AppData/Local/Programs/Python/Python311/Scripts/poetry.exe",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in test_ops.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/RollPy/AppData/Local/Programs/Python/Python311/Scripts/poetry.exe&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
