@@ -1,7 +1,7 @@
 from datetime import date
 
 
-from pydantic import BaseModel, Field, EmailStr
+from pydantic import BaseModel, Field, EmailStr, ConfigDict
 
 
 class ContactSchema(BaseModel):
@@ -10,6 +10,8 @@ class ContactSchema(BaseModel):
     email: EmailStr = Field(min_length=3, max_length=30, description="Input correct email address")
     phone_number: str = Field(min_length=7, max_length=20)
     birthday: date
+
+    model_config = ConfigDict(extra='ignore', env_file=".env", env_file_encoding="utf-8")
 
 
 class ContactResponse(ContactSchema):

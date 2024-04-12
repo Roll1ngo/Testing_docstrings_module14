@@ -6,7 +6,9 @@ def add(a, b):
 
 
 def sub(a, b):
-    return a-b
+    c = a - b
+    if c < 0:
+        raise ValueError("Negative number")
 
 
 def mul(a, b):
@@ -14,6 +16,8 @@ def mul(a, b):
 
 
 def div(a, b):
+    if b == 0:
+        raise ZeroDivisionError("second argument can`t be 0")
     return a / b
 
 

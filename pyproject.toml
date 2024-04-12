@@ -35,3 +35,10 @@ sphinx = "^7.2.6"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+testpaths = [
+    "tests", ]
+pythonpath = "."
+filterwarnings = "ignore::DeprecationWarning"

@@ -1,12 +1,12 @@
 import unittest
 from unittest.mock import patch, mock_open
 
-from src.method.main import read_contacts_from_file, write_contacts_to_file
+from examples_tests.src.method.main import read_contacts_from_file, write_contacts_to_file
 
 
 class TestClass(unittest.TestCase):
     mock_open_file = mock_open()
-    contacts = [{'name': 'Oleksii', 'age': 18}, {'name': 'Dmitriy', 'age': 29}, {'name': 'Сергій', 'age': 28},
+    contacts = [{'name': 'Oleksiy', 'age': 18}, {'name': 'Dmitriy', 'age': 29}, {'name': 'Сергій', 'age': 28},
                 {'name': 'Igor', 'age': 90}]
 
     @patch('json.dump')
@@ -26,4 +26,3 @@ class TestClass(unittest.TestCase):
         load_mock.assert_called()
         load_mock.assert_called_with(self.mock_open_file())
         self.assertListEqual(result, self.contacts)
-

@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field, EmailStr
+from pydantic import BaseModel, Field, EmailStr, ConfigDict
 from uuid import UUID
 
 
@@ -6,6 +6,8 @@ class UserSchema(BaseModel):
     username: str = Field(min_length=3, max_length=1000)
     email: EmailStr
     password: str = Field(min_length=3, max_length=250)
+
+    model_config = ConfigDict(extra='ignore', env_file=".env", env_file_encoding="utf-8")
 
 
 class UserResponse(BaseModel):
@@ -15,8 +17,7 @@ class UserResponse(BaseModel):
     avatar: str | None
     email_verified: bool | None
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(extra='ignore', env_file=".env", env_file_encoding="utf-8")
 
 
 class TokenSchema(BaseModel):

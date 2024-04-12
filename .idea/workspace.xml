@@ -4,31 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c0af4a4-8b93-4e3a-9a17-46cb99f118ea" name="Changes" comment="Add all docstrings for functions and configuration rows">
-      <change afterPath="$PROJECT_DIR$/docs/_build/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/src/example/ops.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/src/get_recipe/get_recipe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/src/get_recipe/get_recipe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/src/get_recipe/ingredients.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/src/method/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/src/my_class/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/src/my_class/task.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/src/reduce_sum/answer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/src/reduce_sum/task.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/src/save_data/answer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/src/save_data/data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/src/save_data/task.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/tests/conspect_tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/tests/test_answer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/tests/test_class.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/tests/test_method.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/tests/test_ops.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/tests/test_recipe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples_tests/tests/test_save.py" afterDir="false" />
+    <list default="true" id="2c0af4a4-8b93-4e3a-9a17-46cb99f118ea" name="Changes" comment="Build documentations using phenix with cloud theme">
+      <change afterPath="$PROJECT_DIR$/examples_tests/tests/async_repeat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/tests/basic_mock_from_DSC.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples_tests/tests/request_example.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_unit_repository_contacts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_unit_repository_users.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples_tests/src/example/ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples_tests/src/example/ops.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples_tests/src/save_data/data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples_tests/tests/conspect_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples_tests/tests/conspect_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples_tests/tests/test_answer.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples_tests/tests/test_answer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples_tests/tests/test_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples_tests/tests/test_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples_tests/tests/test_recipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples_tests/tests/test_mock_open.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples_tests/tests/test_save.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples_tests/tests/test_save.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schemas/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/schemas/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schemas/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/schemas/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,15 +68,126 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in basic_mock_from_DSC.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in conspect_tests.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_answer.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_method.py.executor&quot;: &quot;Debug&quot;,
     &quot;Python tests.Python tests in test_ops.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_recipe.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_save.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.answer (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Python.answer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.async_repeat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.conspect_tests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.request_example.executor&quot;: &quot;Run&quot;,
     &quot;Python.test.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/RollPy/AppData/Local/Programs/Python/Python311/Scripts/poetry.exe&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;cn.yiiguxing.plugin.translate&quot;
   }
 }</component>
+  <component name="RunManager" selected="Python.async_repeat">
+    <configuration name="answer (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Testing_and_deploy_module14" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples_tests/src/reduce_sum" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples_tests/src/reduce_sum/answer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="async_repeat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Testing_and_deploy_module14" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples_tests/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples_tests/tests/async_repeat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_answer.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Testing_and_deploy_module14" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples_tests/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/examples_tests/tests/test_answer.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_method.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Testing_and_deploy_module14" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples_tests/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/examples_tests/tests/test_method.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_save.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Testing_and_deploy_module14" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples_tests/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/examples_tests/tests/test_save.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.async_repeat" />
+        <item itemvalue="Python tests.Python tests in test_answer.py" />
+        <item itemvalue="Python.answer (1)" />
+        <item itemvalue="Python tests.Python tests in test_method.py" />
+        <item itemvalue="Python tests.Python tests in test_save.py" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -124,7 +228,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712645877089</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Build documentations using phenix with cloud theme">
+      <option name="closed" value="true" />
+      <created>1712717736280</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712717736280</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Build documentations using phenix with cloud theme">
+      <option name="closed" value="true" />
+      <created>1712717783361</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712717783361</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -132,6 +252,7 @@
     <MESSAGE value="Del redundant files" />
     <MESSAGE value="Add docstrings for functions, commit before add docstring for configuration rows" />
     <MESSAGE value="Add all docstrings for functions and configuration rows" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add all docstrings for functions and configuration rows" />
+    <MESSAGE value="Build documentations using phenix with cloud theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build documentations using phenix with cloud theme" />
   </component>
 </project>
