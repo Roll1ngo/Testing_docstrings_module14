@@ -105,10 +105,7 @@ class TestAsyncContacts(unittest.IsolatedAsyncioTestCase):
         mocked_contacts = MagicMock()
         mocked_contacts.scalars.return_value.all.return_value = contacts
         self.session.execute.return_value = mocked_contacts
-        result = await search_contacts(search_string,self.session, self.user)
+        result = await search_contacts(search_string, self.session, self.user)
         self.session.execute.assert_called_once()
         self.assertIsInstance(result, Sequence)
         self.assertEqual(result, contacts)
-
-
-

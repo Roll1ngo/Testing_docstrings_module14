@@ -7,10 +7,6 @@ from src.services.auth import auth_service
 from src.conf.config import config
 
 
-# config for smpt service
-
-
-
 async def send_email(email: EmailStr, username: str, host: str) -> None:
     """
     A function that sends an email to the specified email address for verification.

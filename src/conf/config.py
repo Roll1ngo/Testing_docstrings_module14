@@ -3,8 +3,7 @@ from pydantic import ConfigDict, EmailStr
 
 
 class Settings(BaseSettings):
-
-    DB_URL: str = "postgresql+asyncpg://composepostgre:bdhw7@localhost:5432/FastAPI_REST_API"
+    DB_URL: str = "postgresql + asyncpg://username:password@host:port/database_name"
 
     SECRET_KEY: str = "key for encryption JWT token"
     ALGORITHM: str = "algorithm for encryption JWT "

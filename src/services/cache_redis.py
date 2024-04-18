@@ -1,6 +1,6 @@
 import pickle
 
-import redis
+from redis import Redis
 from fastapi import Depends, HTTPException, status
 
 from src.conf.config import config
@@ -10,10 +10,10 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from src.repository import users as repository_users
 
 # Create a Redis cache instance.
-cache = redis.Redis(host=config.REDIS_DOMAIN,
-                    port=config.REDIS_PORT,
-                    db=0,
-                    password=config.REDIS_PASSWORD, )
+cache = Redis(host=config.REDIS_DOMAIN,
+              port=config.REDIS_PORT,
+              db=0,
+              password=config.REDIS_PASSWORD, )
 
 credentials_exception = HTTPException(
     status_code=status.HTTP_401_UNAUTHORIZED,
@@ -37,10 +37,8 @@ async def get_user_cache(email: str, db: AsyncSession = Depends(get_db)) -> User
     user = cache.get(user_hash)
     if user is None:
         user = await repository_users.get_user_by_email(email, db)
-        if user is None:
-            raise credentials_exception
-        cache.set(user_hash, pickle.dumps(user))
-        cache.expire(user_hash, 300)
+        # cache.set(user_hash, pickle.dumps(user))
+        # cache.expire(user_hash, 1)
     else:
         user = pickle.loads(user)
     return user
