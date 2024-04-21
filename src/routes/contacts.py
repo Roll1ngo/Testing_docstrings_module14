@@ -9,6 +9,7 @@ from src.repository import contacts as repositories_contacts
 from src.schemas.contact import ContactSchema, ContactResponse
 from src.entity.models import User, Contact
 from src.services.auth import auth_service
+from src.conf import messages
 
 router = APIRouter(prefix='/contacts', tags=['contacts'])  # Creates a new router for contacts-related routes
 
@@ -56,7 +57,7 @@ async def get_contact(contact_id: int = Path(ge=1),
     """
     contact = await repositories_contacts.get_contact(contact_id, db, user)
     if contact is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Contact not found")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=messages.CONTACT_NOT_FOUND)
     return contact
 
 
@@ -106,7 +107,7 @@ async def update_contact(body: ContactSchema, contact_id: int = Path(qe=1),
     """
     contact = await repositories_contacts.update_contact(contact_id, body, db, user)
     if contact is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Contact not found")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=messages.CONTACT_NOT_FOUND)
     return contact
 
 
@@ -131,7 +132,7 @@ async def delete_contact(contact_id: int = Path(qe=1),
     """
     contact = await repositories_contacts.delete_contact(contact_id, db, user)
     if contact is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Contact not found")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=messages.CONTACT_NOT_FOUND)
     return f"{contact.name} {contact.last_name} has been deleted"
 
 
@@ -177,4 +178,3 @@ async def search_contacts(search_string: str = Path(min_length=2, max_length=20)
     """
     contacts = await repositories_contacts.search_contacts(search_string, db, user)
     return contacts
-

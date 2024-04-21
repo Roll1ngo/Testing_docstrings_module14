@@ -19,8 +19,8 @@ async def get_user_by_email(email: str, db: AsyncSession) -> User:
     - User: the user object corresponding to the provided email address, if found
     """
     request = select(User).filter_by(email=email)
-    user = await db.execute(request)
-    user = user.scalar_one_or_none()
+    response = await db.execute(request)
+    user = response.scalar_one_or_none()
     return user
 
 

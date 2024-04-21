@@ -1,10 +1,9 @@
 import unittest
-from typing import Sequence
 from unittest.mock import MagicMock, AsyncMock, patch
 
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from src.schemas.user import UserSchema, UserResponse
+from src.schemas.user import UserSchema
 from src.entity.models import User
 from src.repository.users import get_user_by_email, create_user, email_verified, update_token, update_avatar_url
 
@@ -16,7 +15,7 @@ class TestAsyncUsers(unittest.IsolatedAsyncioTestCase):
                          email='I_am_cat_not@catmail.com',
                          email_verified=False,
                          refresh_token='refresh_token',
-                         avatar = "base_avatar")
+                         avatar="base_avatar")
         self.session = AsyncMock(spec=AsyncSession)
 
     async def test_get_user_by_email(self):
